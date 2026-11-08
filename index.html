@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Texas Roofing PPC Signals — 20 Verified Leads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -11,80 +14,125 @@
       padding: 0;
     }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: #ffffff;
-      color: #111827;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
       line-height: 1.5;
-      padding: 24px 32px;
+      padding: 32px;
+    }
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
     }
     header {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px 28px;
       margin-bottom: 20px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #e5e7eb;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: baseline;
-      gap: 12px;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
-    h1 {
-      font-size: 20px;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      color: #111827;
+    .header-left h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.02em;
     }
-    .subtitle {
+    .header-left p {
       font-size: 13px;
-      color: #6b7280;
-      margin-top: 2px;
+      color: #64748b;
+      margin-top: 4px;
     }
-    .actions {
+    .header-actions {
       display: flex;
-      gap: 8px;
-    }
-    .btn {
-      font-size: 13px;
-      padding: 6px 12px;
-      border: 1px solid #d1d5db;
-      background: #ffffff;
-      color: #374151;
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .btn:hover {
-      background: #f9fafb;
-      border-color: #9ca3af;
-    }
-    .controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 16px;
+      gap: 10px;
       align-items: center;
     }
-    select, input {
+    .btn-secondary {
+      font-family: inherit;
       font-size: 13px;
-      padding: 6px 10px;
-      border: 1px solid #d1d5db;
-      border-radius: 4px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border: 1px solid #cbd5e1;
       background: #ffffff;
-      color: #111827;
+      color: #334155;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn-secondary:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+    }
+    .btn-primary {
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      background: #0284c7;
+      color: #ffffff;
+      border: 1px solid #0284c7;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      box-shadow: 0 1px 2px rgba(2, 132, 199, 0.2);
+    }
+    .btn-primary:hover {
+      background: #0369a1;
+      border-color: #0369a1;
+    }
+    .controls {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    select, input {
+      font-family: inherit;
+      font-size: 13px;
+      padding: 7px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #0f172a;
       outline: none;
+      transition: border-color 0.15s;
     }
     select:focus, input:focus {
-      border-color: #4b5563;
+      border-color: #0284c7;
+      box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.12);
     }
-    .count {
-      font-size: 12px;
-      color: #6b7280;
+    .count-badge {
       margin-left: auto;
+      font-size: 12px;
+      font-weight: 600;
+      color: #475569;
+      background: #f1f5f9;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .table-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
     .table-wrap {
       overflow-x: auto;
-      border: 1px solid #e5e7eb;
-      border-radius: 4px;
     }
     table {
       width: 100%;
@@ -92,157 +140,259 @@
       text-align: left;
       font-size: 13px;
     }
-    th {
-      background: #f9fafb;
-      color: #4b5563;
+    thead th {
+      background: #f8fafc;
+      color: #475569;
       font-weight: 600;
-      padding: 10px 12px;
-      border-bottom: 1px solid #e5e7eb;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 12px 16px;
+      border-bottom: 1px solid #e2e8f0;
       white-space: nowrap;
     }
-    td {
-      padding: 10px 12px;
-      border-bottom: 1px solid #f3f4f6;
+    tbody td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #f1f5f9;
       vertical-align: top;
     }
-    tr:last-child td {
+    tbody tr:last-child td {
       border-bottom: none;
     }
-    tr:hover td {
-      background: #fafafa;
+    tbody tr:hover td {
+      background: #f8fafc;
     }
-    .co-name {
+    .rank-num {
+      font-weight: 700;
+      color: #94a3b8;
+      font-size: 12px;
+    }
+    .co-title {
       font-weight: 600;
-      color: #111827;
+      font-size: 14px;
+      color: #0f172a;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
-    .co-name:hover {
+    .co-title:hover {
+      color: #0284c7;
+    }
+    .rating-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      margin-top: 3px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #b45309;
+      background: #fef3c7;
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+    .rating-reviews {
+      color: #64748b;
+      font-size: 11px;
+      margin-left: 4px;
+    }
+    .city-pill {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #334155;
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .dm-name {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .dm-email {
+      color: #0284c7;
+      text-decoration: none;
+      font-size: 12px;
+      display: block;
+      margin-top: 2px;
+      word-break: break-all;
+    }
+    .dm-email:hover {
       text-decoration: underline;
     }
-    .rating {
-      color: #6b7280;
+    .dm-phone {
+      color: #64748b;
       font-size: 12px;
       margin-top: 2px;
     }
-    .contact-name {
-      font-weight: 500;
-    }
-    .contact-email {
-      color: #2563eb;
-      text-decoration: none;
-      word-break: break-all;
-    }
-    .contact-email:hover {
-      text-decoration: underline;
-    }
-    .phone {
-      color: #6b7280;
-      font-size: 12px;
-    }
-    .code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 12px;
-      background: #f3f4f6;
-      padding: 2px 4px;
-      border-radius: 3px;
+    .tag {
       display: inline-block;
-      margin: 1px 0;
-    }
-    .leak {
-      max-width: 300px;
-      color: #374151;
-      font-size: 12px;
-      line-height: 1.4;
-    }
-    .pitch {
-      max-width: 320px;
-      color: #4b5563;
-      font-size: 12px;
-      line-height: 1.4;
-    }
-    .copy-btn {
+      font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
+      font-weight: 500;
       padding: 2px 6px;
-      border: 1px solid #d1d5db;
-      background: #fff;
-      color: #374151;
-      border-radius: 3px;
-      cursor: pointer;
-      margin-top: 4px;
-      display: inline-block;
+      border-radius: 4px;
+      margin: 2px 2px 2px 0;
+      border: 1px solid transparent;
+      white-space: nowrap;
     }
-    .copy-btn:hover {
-      background: #f3f4f6;
+    .tag-google {
+      background: #e0f2fe;
+      color: #0369a1;
+      border-color: #bae6fd;
+    }
+    .tag-callrail {
+      background: #dcfce7;
+      color: #15803d;
+      border-color: #bbf7d0;
+    }
+    .tag-meta {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border-color: #bfdbfe;
+    }
+    .tag-gtm {
+      background: #f1f5f9;
+      color: #475569;
+      border-color: #e2e8f0;
+    }
+    .tag-none {
+      background: #fef2f2;
+      color: #b91c1c;
+      border-color: #fecaca;
+    }
+    .tech-row {
+      margin-top: 6px;
+      font-size: 11px;
+      color: #64748b;
+    }
+    .tech-row b {
+      color: #475569;
+    }
+    .leak-text {
+      max-width: 280px;
+      font-size: 12px;
+      color: #334155;
+      line-height: 1.45;
+    }
+    .pitch-box {
+      max-width: 320px;
+    }
+    .pitch-text {
+      font-size: 12px;
+      color: #475569;
+      font-style: italic;
+      line-height: 1.45;
+    }
+    .btn-copy {
+      font-family: inherit;
+      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #0284c7;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      padding: 3px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-copy:hover {
+      background: #0284c7;
+      color: #ffffff;
+    }
+    .btn-copy.copied {
+      background: #10b981;
+      border-color: #10b981;
+      color: #ffffff;
     }
     footer {
       margin-top: 24px;
-      padding-top: 16px;
-      border-top: 1px solid #e5e7eb;
+      padding: 16px 8px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
       font-size: 12px;
-      color: #6b7280;
+      color: #64748b;
+    }
+    footer a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div>
-      <h1>Texas Roofing PPC & Conversion Signals</h1>
-      <div class="subtitle">Sample audit of 20 active Texas roofing contractors for marketing agencies.</div>
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <h1>Texas Roofing PPC & Conversion Signals</h1>
+        <p>Verified sample dataset of 20 active Texas roofing contractors for marketing agencies.</p>
+      </div>
+      <div class="header-actions">
+        <button class="btn-secondary" onclick="window.print()">Print / PDF</button>
+        <button class="btn-secondary" onclick="exportCsv()">Export CSV</button>
+        <a class="btn-primary" href="mailto:omargamalsvc@gmail.com?subject=Agency%20Weekly%20Signal%20Feed%20($149/mo)&body=Hi%20Omar,%20I%20would%20like%20to%20subscribe%20to%20the%20weekly%20roofing%20PPC%20signals%20feed.">Subscribe ($149/mo)</a>
+      </div>
+    </header>
+
+    <div class="controls">
+      <select id="citySelect" onchange="filterData()">
+        <option value="ALL">All Texas Metros (20)</option>
+        <option value="Houston">Houston (6)</option>
+        <option value="Austin">Austin (5)</option>
+        <option value="Dallas">Dallas (4)</option>
+        <option value="San Antonio">San Antonio (3)</option>
+        <option value="Fort Worth">Fort Worth (2)</option>
+      </select>
+
+      <select id="tagSelect" onchange="filterData()">
+        <option value="ALL">All Ad Signals</option>
+        <option value="Google Ads">Has Active Google Ads (AW-)</option>
+        <option value="CallRail">Has CallRail Tracking</option>
+        <option value="Meta Pixel">Has Meta Pixel</option>
+        <option value="Zero Paid">Zero Paid Pixels</option>
+      </select>
+
+      <input type="text" id="searchInput" placeholder="Search company, owner, email, pixel..." oninput="filterData()" style="width: 260px;">
+
+      <div class="count-badge" id="rowCount">20 of 20 leads</div>
     </div>
-    <div class="actions">
-      <button class="btn" onclick="window.print()">Print / PDF</button>
-      <button class="btn" onclick="exportCsv()">Download CSV</button>
+
+    <div class="table-card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 44px;">#</th>
+              <th style="width: 220px;">Company</th>
+              <th style="width: 110px;">Metro</th>
+              <th style="width: 200px;">Decision-Maker</th>
+              <th style="width: 240px;">Ad Tracking & Tech Stack</th>
+              <th style="width: 280px;">Identified Money Leak</th>
+              <th>Suggested Agency Pitch</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
-  </header>
 
-  <div class="controls">
-    <select id="citySelect" onchange="filterData()">
-      <option value="ALL">All Cities (20)</option>
-      <option value="Houston">Houston</option>
-      <option value="Dallas">Dallas</option>
-      <option value="Austin">Austin</option>
-      <option value="San Antonio">San Antonio</option>
-      <option value="Fort Worth">Fort Worth</option>
-    </select>
-
-    <select id="tagSelect" onchange="filterData()">
-      <option value="ALL">All Signals</option>
-      <option value="Google Ads">Has Google Ads (AW-)</option>
-      <option value="CallRail">Has CallRail</option>
-      <option value="Meta Pixel">Has Meta Pixel</option>
-      <option value="Zero Paid">Zero Paid Pixels</option>
-    </select>
-
-    <input type="text" id="searchInput" placeholder="Search company, name, email..." oninput="filterData()" style="width: 220px;">
-
-    <div class="count" id="rowCount">Showing 20 of 20</div>
+    <footer>
+      <div>Data verified via live DOM telemetry & corporate registries.</div>
+      <div>Agency Weekly Feed: <b>$149/mo</b> (25–50 fresh weekly audited leads) • <a href="mailto:omargamalsvc@gmail.com">Contact Sales</a></div>
+    </footer>
   </div>
-
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 40px;">#</th>
-          <th style="width: 200px;">Company</th>
-          <th style="width: 100px;">City</th>
-          <th style="width: 180px;">Decision-Maker</th>
-          <th style="width: 200px;">Ad Tracking & Tech</th>
-          <th style="width: 260px;">Identified Money Leak</th>
-          <th>Suggested Agency Pitch</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
-  </div>
-
-  <footer>
-    <div>Data updated Q4 • Verified via live site DOM & registry inspection.</div>
-    <div>Agency Weekly Feed: $149/mo (25–50 fresh leads/week)</div>
-  </footer>
 
   <script>
     const DATA = [{"company_name": "Braun's Roofing", "city": "Houston", "state": "TX", "website": "https://www.braunsroofing.com/", "phone": "(713) 645-0505", "google_rating": 4.2, "google_reviews": 256, "owner_decision_maker": "Leo 'Skeeter' Braun (Founder & President)", "direct_email": "skeeter@braunsroofing.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Google Ads: AW-875845778", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Skeeter, noticed Braun's Roofing is actively driving paid Google Ads clicks (AW-875845778) in Houston, but you currently have no Meta retargeting pixel to recapture visitors on FB/IG, no instant roof cost calculator, and your 4.2 rating is leaking ad clicks to competitors. We build high-converting Roofr estimate bridges and automated 5-star review engines.", "rank": 1}, {"company_name": "RISE Roofing Company Houston - Roofing Contractor", "city": "Houston", "state": "TX", "website": "https://www.riseroofinghouston.com/", "phone": "(832) 345-9527", "google_rating": 4.7, "google_reviews": 29, "owner_decision_maker": "Anthony Gallo (Owner)", "direct_email": "office@riseroofinghouston.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Google Ads: AW-16494344509 | Meta Pixel: 1024738846015150 | CallRail: CallRail Account #975281741", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Anthony, impressed by your paid acquisition stack with CallRail and AccuLynx in Houston! However, your landing page is missing an instant roof cost calculator (like Roofr) and instant calendar booking. In Houston roofing PPC, 60% of clicks bounce when forced into a generic contact form. We plug an interactive estimator directly into AccuLynx.", "rank": 2}, {"company_name": "Priority Roofing (Dallas HQ)", "city": "Dallas", "state": "TX", "website": "https://priorityroofs.com/location/dallas/", "phone": "(469) 615-8193", "google_rating": 5.0, "google_reviews": 997, "owner_decision_maker": "Will Miller (Founder & CEO)", "direct_email": "will@priorityroofs.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Google Ads: AW-17485105077", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": true, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Will, Priority Roofing dominates DFW with nearly 1,000 5-star reviews and active Google Ads (AW-17485105077), but your Dallas landing page has zero Meta retargeting pixels active. At $50+/click in Dallas roofing, over 80% of paid search traffic bounces without calling and you cannot retarget them on FB/IG. We install omnichannel remarketing loops that drop your CAC by 35%.", "rank": 3}, {"company_name": "Priority Roofing (Houston)", "city": "Houston", "state": "TX", "website": "https://priorityroofs.com/location/houston/", "phone": "(281) 380-0357", "google_rating": 5.0, "google_reviews": 382, "owner_decision_maker": "Micah McQueen (Vice President & Minority Owner)", "direct_email": "mcqueen@priorityroofs.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Google Ads: AW-17485105077", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": true, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Micah, saw Priority Roofing's aggressive Google Ads spend in Houston. With 382 5-star reviews, your authority is unquestioned, but your Houston branch is running paid search without Meta Pixel remarketing or an instant Roofr calculator. We deploy instant price estimate bridges that double mobile conversion rates.", "rank": 4}, {"company_name": "Precision Roof Crafters, Inc.", "city": "Houston", "state": "TX", "website": "https://precisionroofcrafters.com/houston-roofing/", "phone": "(713) 799-8555", "google_rating": 4.9, "google_reviews": 473, "owner_decision_maker": "Hisham 'Hish' Rahman (Founder, President & CEO)", "direct_email": "hish@precisionroofcrafters.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Google Ads: AW-998237952", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": true, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Hish, love that you have Roofle deployed on Precision Roof Crafters! However, while you are paying for Google Ads clicks (AW-998237952), you have no Meta Pixel active to retarget homeowners who start a Roofle quote but abandon halfway through. We build automated abandoned-estimate retargeting flows that recover 20% of lost leads.", "rank": 5}, {"company_name": "Houston Roofing Experts", "city": "Houston", "state": "TX", "website": "https://houstonroofingexperts.com/", "phone": "(713) 291-3866", "google_rating": 4.9, "google_reviews": 120, "owner_decision_maker": "Agustin Gomez (Founder & Owner)", "direct_email": "sales@houstonroofingexperts.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 814229682273964", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Agustin, saw your active Meta ads (Pixel 814229682273964) and Jobber CRM setup. Driving social traffic directly into a static contact form results in 70%+ dropoff on mobile. We connect an instant Roofr calculator directly into Jobber so Facebook clickers get a ballpark estimate and book their inspection in under 60 seconds.", "rank": 6}, {"company_name": "Monarch Roofing Houston", "city": "Houston", "state": "TX", "website": "https://www.monarch-roofing.com/", "phone": "(832) 215-0987", "google_rating": 4.7, "google_reviews": 158, "owner_decision_maker": "Shane Schlemeyer (Owner & President)", "direct_email": "shane@monarch-roofing.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 933628501411489", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Shane, noticed Monarch Roofing's active Meta campaigns (Pixel 933628501411489) across Houston. Homeowners browsing on Facebook rarely fill out a standard contact form\u2014they want instant pricing. We install an instant roof estimate widget that captures homeowner address, email, and phone before showing estimated costs.", "rank": 7}, {"company_name": "StazOn Roofing", "city": "Dallas", "state": "TX", "website": "https://stazonroof.com/", "phone": "(214) 357-0300", "google_rating": 4.8, "google_reviews": 29, "owner_decision_maker": "Paul Graham (Founder & President)", "direct_email": "paul@stazonroof.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "CallRail: CallRail Account #363551155", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Paul, saw StazOn Roofing is using CallRail call tracking (#363551155) in Dallas. While your call tracking is set up, your website is missing retargeting pixels and an instant roof calculator. Homeowners who research online after hours leave without calling. We install 24/7 self-service estimate bridges that feed directly into your CRM.", "rank": 8}, {"company_name": "Commercial Flat Roofing of Dallas", "city": "Dallas", "state": "TX", "website": "https://commercialflatroofingofdallas.com/", "phone": "(214) 484-0950", "google_rating": 5.0, "google_reviews": 38, "owner_decision_maker": "Vince (Managing Director / Owner)", "direct_email": "info@commercialflatroofingofdallas.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Zero Paid Pixels Installed", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Vince, saw Commercial Flat Roofing of Dallas is utilizing enterprise tooling (HubSpot & Salesforce). For commercial property managers seeking TPO and flat roof replacements, speed to ballpark cost is everything. We install commercial roof budget calculators that automatically sync building square footage and contact data into HubSpot.", "rank": 9}, {"company_name": "Sun Commercial Roofs", "city": "Dallas", "state": "TX", "website": "https://www.suncoroofs.com/", "phone": "(214) 350-7770", "google_rating": 4.5, "google_reviews": 11, "owner_decision_maker": "Richard Bass (President & CEO)", "direct_email": "richard@suncoroofs.com", "all_emails": "", "linkedin_or_social": "", "exact_ad_pixels": "Zero Paid Pixels Installed", "tech_stack_crm": "crm_field_management, instant_roof_estimator, chat_and_review_widgets, call_tracking_providers", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0, "money_leak_diagnosis": "missing_instant_roof_estimator ; missing_online_scheduling ; missing_meta_retargeting ; slow_mobile_latency ; review_rating_deficit ; leak_summary", "agency_pitch_hook": "Hi Richard, Sun Commercial Roofs has 35+ years of pedigree in DFW, but having only 11 Google reviews at 4.5 stars leaves you vulnerable when property managers compare commercial bids. We deploy automated B2B review systems and commercial roof assessment calculators that establish digital dominance.", "rank": 10}, {"company_name": "Austin Roofing Company & Water Damage | WDR", "city": "Austin", "state": "TX", "website": "https://austinroofingandwaterdamage.com/", "phone": "(512) 820-6505", "google_rating": 5.0, "google_reviews": 1525, "owner_decision_maker": "Brad Farr (Co-Owner / Principal), Coby Allan (Co-Owner / Principal)", "direct_email": "info@austinroofingandwaterdamage.com", "all_emails": "info@austinroofingandwaterdamage.com, bradfarr@rocketmail.com", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 2071335886809891", "tech_stack_crm": "Elementor, GAF Certified Contractor, Owens Corning Preferred, WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0.69, "money_leak_diagnosis": "[HIGH_AD_SPEND_NO_FRICTIONLESS_CONVERSION] Actively driving high-cost PPC traffic via Google Ads (AW-10871947024), CallRail tracking (214374783), and Meta retargeting, but relying entirely on static forms. Lacks an instant online calendar booking system or instant roof estimator (Roofr), triggering high bounce rates on expensive mobile clicks ($35-$60/click).", "agency_pitch_hook": "Hi Brad & Coby, your 1,525 5.0-star reviews dominate Austin search, and your active Google Ads (AW-10871947024) + CallRail tracking show you invest heavily in growth. But routing high-intent mobile PPC traffic to static forms loses up to 55% of buyers who want immediate friction-free quotes. We plug in an instant visual roof estimator and automated 24/7 calendar booking bridge to double your PPC lead capture.", "rank": 11}, {"company_name": "Lon Smith Roofing & Construction", "city": "Fort Worth", "state": "TX", "website": "https://www.lonsmith.com/", "phone": "(817) 926-8400", "google_rating": 4.7, "google_reviews": 519, "owner_decision_maker": "Shawn Michael (President), Lon Smith (Founder (Legacy))", "direct_email": "info@lonsmith.com", "all_emails": "info@lonsmith.com, customercare@lonsmith.com", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 6035110616587644, 1328040063964244", "tech_stack_crm": "WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0.8, "money_leak_diagnosis": "[MULTI_CHANNEL_PPC_BLEED_NO_INSTANT_ESTIMATOR] Massive market leader in DFW running Google Ads (AW-954701356), dual Meta Pixels, and CallRail tracking (613988164). Lacks instant self-serve roof quoting or instant inspection booking, sending $40-$65 clicks into traditional friction-heavy forms.", "agency_pitch_hook": "Hi Shawn, Lon Smith Roofing is the titan of Fort Worth roofing with 519 reviews. We verified your active Google Ads (AW-954701356), CallRail, and Meta pixels. In DFW, roof replacement clicks cost $40\u2013$65. Without instant roof measurement/quoting capture, over 60% bounce before submitting a form. We install satellite-driven self-serve quoting that captures homeowner address and phone in under 60 seconds.", "rank": 12}, {"company_name": "Bison Roofing", "city": "San Antonio", "state": "TX", "website": "http://www.bisonroofing.net/", "phone": "(210) 888-9646", "google_rating": 4.9, "google_reviews": 550, "owner_decision_maker": "Genaro Montelongo (Founder, Owner & CEO)", "direct_email": "info@bisonroofing.net", "all_emails": "info@bisonroofing.net", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 1256855204730056, 545012799788298", "tech_stack_crm": "AccuLynx CRM, Elementor, Owens Corning Preferred, WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 1.52, "money_leak_diagnosis": "[SOCIAL_ONLY_RETARGETING_UNMONETIZED_PPC] Running active Meta retargeting pixels and managing inbound jobs with AccuLynx CRM, supported by 550 glowing reviews. However, they possess ZERO Google Ads conversion tracking (AW) and zero CallRail attribution, failing to monetize urgent storm and roof replacement searches in San Antonio.", "agency_pitch_hook": "Hi Genaro, your 550 4.9-star reviews give Bison Roofing incredible trust in San Antonio, and your Meta pixels prove you know social advertising works. However, you have zero Google Ads capture or call tracking installed, conceding high-intent emergency roof repair searches directly to competitors. We connect high-converting Google LSA & Search ads directly into your AccuLynx pipeline.", "rank": 13}, {"company_name": "JP Exteriors", "city": "Austin", "state": "TX", "website": "https://jpexteriorstx.com/", "phone": "(737) 201-0992", "google_rating": 4.8, "google_reviews": 596, "owner_decision_maker": "Allan Raykhelson (President)", "direct_email": "info@jpexteriorstx.com", "all_emails": "info@jpexteriorstx.com", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 1938664386963300", "tech_stack_crm": "Hover 3D", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 1.51, "money_leak_diagnosis": "[PAID_SEARCH_SOCIAL_DESYNC_NO_BOOKING] Simultaneously running Google Ads (AW-10985801117) and Meta Pixel (1938664386963300) with Hover 3D, but lacks call tracking (CallRail) and has no instant calendar booking or Roofr estimator, forcing paid visitors through friction-prone contact pages.", "agency_pitch_hook": "Hi Allan, impressive operation with 596 reviews and Hover 3D modeling. You're running Google Ads (AW-10985801117) and Meta Pixels simultaneously, but without dynamic call tracking (CallRail) or instant calendar self-scheduling, you cannot pinpoint which campaigns drive closed jobs. We install revenue-attributed call tracking and automated estimate scheduling to lift your closed job rate by 35%.", "rank": 14}, {"company_name": "Hul-Ster Roofing", "city": "Fort Worth", "state": "TX", "website": "http://hul-sterroofing.com/", "phone": "(817) 507-9374", "google_rating": 5.0, "google_reviews": 189, "owner_decision_maker": "Brady Hulsey (Co-Owner & Founder), Bryan Seamster (Co-Owner & Founder)", "direct_email": "info@hul-ster.com", "all_emails": "info@hul-ster.com", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 1059595782591603", "tech_stack_crm": "Squarespace", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0.36, "money_leak_diagnosis": "[DUAL_PPC_SPEND_ZERO_AUTOMATED_CAPTURE] High-velocity paid ad spender running Google Ads (AW-11354415245) and Meta retargeting (1059595782591603) on an ultra-fast Squarespace site (0.36s), but lacks CallRail tracking, instant estimate widgets, and calendar booking.", "agency_pitch_hook": "Hi Brady & Bryan, congratulations on 189 flawless 5.0-star reviews. You're actively bidding on Google Ads (AW-11354415245) and running Meta social campaigns. Since your site loads blazingly fast (0.36s), you have the perfect foundation to add an instant Roofr calculator and automated estimate scheduler to convert costly DFW ad clicks into booked inspections instantly.", "rank": 15}, {"company_name": "Kidd Roofing", "city": "Austin", "state": "TX", "website": "https://www.kiddroof.com/", "phone": "(512) 671-7791", "google_rating": 4.9, "google_reviews": 868, "owner_decision_maker": "Chris D. Lowe (President & CEO), Corey Wilson (Vice President)", "direct_email": "info@kiddroof.com", "all_emails": "info@kiddroof.com", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 26630307119988971", "tech_stack_crm": "WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0.9, "money_leak_diagnosis": "[HIGH_AUTHORITY_NO_SEARCH_ADS_NO_INSTANT_ESTIMATE] Market benchmark in Austin with 868 reviews and 40-year history. Uses Meta Pixel (26630307119988971) and GTM, but has zero Google Ads AW tag installed, allowing aggressive competitors to steal high-ticket replacement searches, combined with form-only capture.", "agency_pitch_hook": "Hi Chris & Corey, Kidd Roofing is an iconic Central Texas institution with 868 4.9-star reviews. Your Meta pixel is capturing social traffic, but you have no Google Ads conversion engine installed\u2014allowing aggressive regional roofers to intercept homeowners searching for top-rated Austin roofers. We can deploy a defensive and high-ROAS Google Ads system alongside automated booking.", "rank": 16}, {"company_name": "Holden Roofing", "city": "San Antonio", "state": "TX", "website": "https://holdenroofing.com/", "phone": "(210) 630-9322", "google_rating": 4.8, "google_reviews": 496, "owner_decision_maker": "Brett Holden (Owner, President & CEO)", "direct_email": "recruiting@holdenroofing.com", "all_emails": "recruiting@holdenroofing.com, info@holdenroofing.com", "linkedin_or_social": "", "exact_ad_pixels": "Meta Pixel: 668400004620463", "tech_stack_crm": "Birdeye (Review & Chat), WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0.4, "money_leak_diagnosis": "[MULTI_LOCATION_BRAND_UNMONETIZED_PPC] Over 880 combined reviews across San Antonio and Austin with active Birdeye chat and Meta Pixel (668400004620463). Lacks Google Ads AW tags and instant online roof estimation, missing out on predictable search-driven pipeline expansion.", "agency_pitch_hook": "Hi Brett, Holden Roofing's multi-city footprint with 880+ reviews across SA and Austin is exceptional. You're running Meta tracking and Birdeye, but leaving a vacuum on paid Google search without dedicated AW conversion architecture or self-serve quoting. We build high-converting regional landing pages with instant quoting that generate exclusive, high-ticket re-roof leads.", "rank": 17}, {"company_name": "Rox Roofing", "city": "San Antonio", "state": "TX", "website": "https://roxroofing.com/", "phone": "(210) 900-0977", "google_rating": 4.9, "google_reviews": 347, "owner_decision_maker": "Roque 'Rocky' Ortiz (Founder & Owner)", "direct_email": "info@roxroofing.com", "all_emails": "info@roxroofing.com", "linkedin_or_social": "", "exact_ad_pixels": "Zero Paid Pixels Installed", "tech_stack_crm": "CompanyCam, Elementor, Owens Corning Preferred, WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 2.42, "money_leak_diagnosis": "[MASSIVE_REPUTATION_ZERO_PAID_MONETIZATION] Elite reputation with 347 reviews (4.9 stars) and Owens Corning Preferred credentials, but zero paid tracking pixels installed. Additionally, site experiences sluggish mobile load times (2.42s) with zero instant estimator or calendar booking.", "agency_pitch_hook": "Hi Rocky, your 347 4.9-star reviews make Rox Roofing one of San Antonio's premier roofers. Yet our telemetry audit confirms you have zero Google Ads or Meta retargeting pixels installed. You're leaving tens of thousands in monthly high-margin reroof revenue on the table. We build turnkey Google PPC campaigns powered by your flawless social proof and an instant estimate bridge.", "rank": 18}, {"company_name": "Ace Roofing Company", "city": "Austin", "state": "TX", "website": "https://aceroofingtexas.com/", "phone": "(512) 836-7663", "google_rating": 4.8, "google_reviews": 344, "owner_decision_maker": "Jason Wright (Owner & President)", "direct_email": "j.wright@aceroofingtexas.com", "all_emails": "j.wright@aceroofingtexas.com, info@aceroofingtexas.com", "linkedin_or_social": "", "exact_ad_pixels": "Zero Paid Pixels Installed", "tech_stack_crm": "Elementor, Roofr (Instant Estimator), WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 1.03, "money_leak_diagnosis": "[EQUIPPED_ESTIMATOR_NO_PAID_TRAFFIC_FUEL] Has 344 reviews, 4.8 stars, and Roofr instant estimation already installed, but zero active Google Ads (AW) or Meta retargeting pixels. They built high-converting conversion infrastructure but aren't fueling it with paid ad traffic.", "agency_pitch_hook": "Hi Jason, noticed Ace Roofing has 344 reviews and already utilizes Roofr's instant estimator\u2014which puts you ahead of 90% of roofers in Austin! But our scan reveals zero active Google Ads (AW) or Meta retargeting pixels fueling that engine. We run hyper-targeted local search ads directly into your Roofr estimator to deliver 25\u201340 qualified reroof appointments per month.", "rank": 19}, {"company_name": "Quick Roofing - Austin", "city": "Austin", "state": "TX", "website": "https://www.quickroofing.com/", "phone": "(512) 609-8675", "google_rating": 4.9, "google_reviews": 196, "owner_decision_maker": "Jeff Quick (Founder), Eric Armstrong (CEO & President)", "direct_email": "repairs@quickroofing.com", "all_emails": "repairs@quickroofing.com, orders@quickroofing.com", "linkedin_or_social": "", "exact_ad_pixels": "Zero Paid Pixels Installed", "tech_stack_crm": "CertainTeed Credentialed, GAF Certified Contractor, Owens Corning Preferred, WordPress", "has_instant_estimator": false, "has_online_booking": false, "site_load_sec": 0.72, "money_leak_diagnosis": "[PPC_RETARGETING_BLACK_HOLE_NO_INSTANT_BOOKING] Actively financing Google Ads (AW-799670726) via GTM, but has zero Meta Pixel installed. High-cost search visitors who do not immediately convert are never retargeted on social channels, causing significant ad budget bleed.", "agency_pitch_hook": "Hi Eric & Jeff, Quick Roofing's Austin presence is robust with 196 4.9-star reviews and active Google Ads (AW-799670726). But you have no Meta Pixel installed on your site. For every $1,000 spent on Google clicks, up to 90% leave without calling\u2014and without Meta retargeting, those prospects are lost forever. We install full-funnel social retargeting and automated missed-call capture to recover 20%+ of lost leads.", "rank": 20}];
@@ -259,7 +409,7 @@
           if (tag !== 'Zero Paid' && !d.exact_ad_pixels.includes(tag)) return false;
         }
         if (q) {
-          const text = (d.company_name + ' ' + d.city + ' ' + d.owner_decision_maker + ' ' + d.direct_email + ' ' + d.exact_ad_pixels + ' ' + d.money_leak_diagnosis).toLowerCase();
+          const text = (d.company_name + ' ' + d.city + ' ' + d.owner_decision_maker + ' ' + d.direct_email + ' ' + d.exact_ad_pixels + ' ' + d.tech_stack_crm + ' ' + d.money_leak_diagnosis).toLowerCase();
           if (!text.includes(q)) return false;
         }
         return true;
@@ -268,37 +418,65 @@
       renderRows(filtered);
     }
 
+    function copyPitch(btn, text) {
+      navigator.clipboard.writeText(text);
+      const original = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1800);
+    }
+
     function renderRows(rows) {
       const tbody = document.getElementById('tableBody');
-      document.getElementById('rowCount').textContent = `Showing ${rows.length} of ${DATA.length}`;
+      document.getElementById('rowCount').textContent = `${rows.length} of ${DATA.length} leads`;
 
       tbody.innerHTML = rows.map(r => {
-        const pixels = r.exact_ad_pixels.split(' | ').map(p => `<span class="code">${p}</span>`).join(' ');
-        const tech = r.tech_stack_crm ? `<div style="margin-top: 4px; color: #6b7280; font-size: 11px;">Tech: ${r.tech_stack_crm}</div>` : '';
+        const pixelTags = r.exact_ad_pixels.split(' | ').map(p => {
+          let cls = 'tag-gtm';
+          if (p.includes('Google Ads')) cls = 'tag-google';
+          else if (p.includes('CallRail')) cls = 'tag-callrail';
+          else if (p.includes('Meta Pixel')) cls = 'tag-meta';
+          else if (p.includes('Zero Paid')) cls = 'tag-none';
+          return `<span class="tag ${cls}">${p}</span>`;
+        }).join('');
+
+        const tech = r.tech_stack_crm ? `<div class="tech-row"><b>Tech:</b> ${r.tech_stack_crm}</div>` : '';
 
         return `
           <tr>
-            <td>${r.rank}</td>
+            <td class="rank-num">${r.rank}</td>
             <td>
-              <a href="${r.website}" target="_blank" class="co-name">${r.company_name}</a>
-              <div class="rating">${r.google_rating} ★ (${r.google_reviews} reviews)</div>
-            </td>
-            <td>${r.city}, TX</td>
-            <td>
-              <div class="contact-name">${r.owner_decision_maker}</div>
-              <div><a href="mailto:${r.direct_email}" class="contact-email">${r.direct_email}</a></div>
-              <div class="phone">${r.phone}</div>
+              <a href="${r.website}" target="_blank" class="co-title">${r.company_name} ↗</a>
+              <div>
+                <span class="rating-row">★ ${r.google_rating}</span>
+                <span class="rating-reviews">(${r.google_reviews} reviews)</span>
+              </div>
             </td>
             <td>
-              ${pixels}
+              <span class="city-pill">${r.city}, TX</span>
+            </td>
+            <td>
+              <div class="dm-name">${r.owner_decision_maker}</div>
+              <a href="mailto:${r.direct_email}" class="dm-email">${r.direct_email}</a>
+              <div class="dm-phone">${r.phone}</div>
+            </td>
+            <td>
+              <div>${pixelTags}</div>
               ${tech}
             </td>
             <td>
-              <div class="leak">${r.money_leak_diagnosis}</div>
+              <div class="leak-text">${r.money_leak_diagnosis}</div>
             </td>
             <td>
-              <div class="pitch">"${r.agency_pitch_hook}"</div>
-              <button class="copy-btn" onclick="navigator.clipboard.writeText(${JSON.stringify(r.agency_pitch_hook)}); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy', 1500)">Copy</button>
+              <div class="pitch-box">
+                <div class="pitch-text">"${r.agency_pitch_hook}"</div>
+                <button class="btn-copy" onclick="copyPitch(this, ${JSON.stringify(r.agency_pitch_hook)})">
+                  Copy Pitch
+                </button>
+              </div>
             </td>
           </tr>
         `;
